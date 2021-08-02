@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>I tried out GPT3, Here is what I did - Part 2</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>.hljs { background: none; }</style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description" content="Ramit Surana Personal Blog" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="/gpt3-part-2" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+     <!--title below is coming from _includes/dynamic_title-->
+    <meta property="og:site_name" content="Ramit Surana" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="I tried out GPT3, Here is what I did - Part 2" />
+    <meta property="og:description" content="Spreadsheets Generating Fill in the blank questions Solving Leetcode Coding Challenges Decrypting AES256 Creating a new language Trick Question on Football Generating Essays Conclusion Spreadsheets GPT3 can be useful for generating content that can be later used for creating spreadsheets, this would help in generating spreadsheets without any manual efforts." />
+    <meta property="og:url" content="/gpt3-part-2" />
+    <meta property="og:image" content="/assets/images/writing.jpg" />
+    <meta property="article:publisher" content="https://www.facebook.com/ramitsurana" />
+    <meta property="article:author" content="https://www.facebook.com/ramitsurana" />
+    <meta property="article:published_time" content="2021-07-29T00:00:00+00:00" />
+    <meta property="article:modified_time" content="2021-07-29T00:00:00+00:00" />
+    <meta property="article:tag" content="Gpt3 Chat Transformers Openai" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="I tried out GPT3, Here is what I did - Part 2" />
+    <meta name="twitter:description" content="Spreadsheets Generating Fill in the blank questions Solving Leetcode Coding Challenges Decrypting AES256 Creating a new language Trick Question on Football Generating Essays Conclusion Spreadsheets GPT3 can be useful for generating content that can be later used for creating spreadsheets, this would help in generating spreadsheets without any manual efforts." />
+    <meta name="twitter:url" content="/" />
+    <meta name="twitter:image" content="/assets/images/writing.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Ramit Surana" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Gpt3 Chat Transformers Openai" />
+    <meta name="twitter:site" content="@ramitsurana" />
+    <meta name="twitter:creator" content="@ramitsurana" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="933" />
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Ramit Surana",
+        "logo": "/"
+    },
+    "url": "/gpt3-part-2",
+    "image": {
+        "@type": "ImageObject",
+        "url": "/assets/images/writing.jpg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/gpt3-part-2"
+    },
+    "description": "Spreadsheets Generating Fill in the blank questions Solving Leetcode Coding Challenges Decrypting AES256 Creating a new language Trick Question on Football Generating Essays Conclusion Spreadsheets GPT3 can be useful for generating content that can be later used for creating spreadsheets, this would help in generating spreadsheets without any manual efforts."
+}
+    </script>
+
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/public/ghost-sdk.min.js?v=724281a32e"></script>
+    <script type="text/javascript">
+    ghost.init({
+    	clientId: "ghost-frontend",
+    	clientSecret: "f84a07a72b17"
+    });
+    </script> -->
+
+    <meta name="generator" content="Jekyll 3.6.2" />
+    <link rel="alternate" type="application/rss+xml" title="I tried out GPT3, Here is what I did - Part 2" href="/feed.xml" />
+
+
+</head>
+<body class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="/">Ramit Surana</a>
+            
+        
+        
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+<!--     <li class="nav-getting-started" role="menuitem"><a href="/tag/getting-started/">Getting Started</a></li> -->
+    <li class="nav-try-ghost" role="menuitem"><a href="https://fantastic-experimenter-7320.ck.page/25b1d91d09">Newsletter</a></li>
+</ul>
+
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+                <a class="social-link social-link-fb" href="https://facebook.com/ramitsurana" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+</a>
+            
+            
+                <a class="social-link social-link-tw" href="https://twitter.com/ramitsurana" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+            
+        </div>
+        
+            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        
+    </div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full  tag-gpt3-chat-transformers-openai post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="29 July 2021">29 July 2021</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/gpt3-chat-transformers-openai/'>GPT3 CHAT TRANSFORMERS OPENAI</a>
+                            
+                        
+                    
+                </section>
+                <h1 class="post-full-title">I tried out GPT3, Here is what I did - Part 2</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/writing.jpg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <ul>
+  <li><a href="#spreadsheets">Spreadsheets</a></li>
+  <li><a href="#generating-fill-in-the-blank-questions">Generating Fill in the blank questions</a></li>
+  <li><a href="#solving-leetcode-coding-challenges">Solving Leetcode Coding Challenges</a></li>
+  <li><a href="#decrypting-aes256">Decrypting AES256</a></li>
+  <li><a href="#creating-a-new-language">Creating a new language</a></li>
+  <li><a href="#trick-question-on-football">Trick Question on Football</a></li>
+  <li><a href="#generating-essays">Generating Essays</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ul>
+
+<h3 id="spreadsheets">Spreadsheets</h3>
+
+<p>GPT3 can be useful for generating content that can be later used for creating spreadsheets, this would help in generating spreadsheets without any manual efforts. I was curious if GPT3 could do multiple complex calculations and solve some basic formulas like summation, average, mean, etc. But after some understanding of how the GPT3 works with spreadsheets, I realized it’s not really doing any mathematical computation, it’s basically generating a more generalized form of information that we like to spend time looking up to the internet and filling it out. Here is a short example -</p>
+
+<p><img src="assets/images/gpt3/gpt3-spreadsheet.png" alt="Spreadsheet" /></p>
+
+<p>I tried out to calculate the mean as well, but the GPT3 model was not very clear on how to proceed with it</p>
+
+<h3 id="generating-fill-in-the-blank-questions">Generating Fill in the blank questions</h3>
+
+<p>In a T5 sequence to sequence model, one of the key features is that we can actually generate some questions and answers using the model. Although I believe GPT3 is not designed to be a T5 based model, it was nice to see that it could generate questions and answers based on its current knowledge. Here is a short example -</p>
+
+<p><img src="assets/images/gpt3/t5-gpt3.png" alt="T5" /></p>
+
+<p>This kind of feature is highly useful for academic settings where people tend to create flashcards like using Anki and teachers like to give quizzes to students to help students improve their understanding of the subject. Highly Recommended!</p>
+
+<h3 id="solving-leetcode-coding-challenges">Solving Leetcode Coding Challenges</h3>
+
+<p>For the Leetcode Solving challenge part, I have chosen the 2 sum problem. For reference, here is the following link - <a href="https://leetcode.com/problems/two-sum/">https://leetcode.com/problems/two-sum/</a></p>
+
+<p>After a few attempts to check out its source and setting Response Length as 215. I was able to understand, the source of the solution and why it’s not good.</p>
+
+<p>Challenge 1 Input ⇒</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Solve the following Problem in Python:
+</span>
+<span class="n">Problem</span><span class="p">:</span> 
+<span class="n">Given</span> <span class="n">an</span> <span class="n">array</span> <span class="n">of</span> <span class="n">integers</span> <span class="n">nums</span> <span class="ow">and</span> <span class="n">an</span> <span class="n">integer</span> <span class="n">target</span><span class="p">,</span> <span class="k">return</span> <span class="n">indices</span> <span class="n">of</span> <span class="n">the</span> <span class="n">two</span> <span class="n">numbers</span> <span class="n">such</span> <span class="n">that</span> <span class="n">they</span> <span class="n">add</span> <span class="n">up</span> <span class="n">to</span> <span class="n">target</span><span class="p">.</span>
+<span class="n">You</span> <span class="n">may</span> <span class="n">assume</span> <span class="n">that</span> <span class="n">each</span> <span class="nb">input</span> <span class="n">would</span> <span class="n">have</span> <span class="n">exactly</span> <span class="n">one</span> <span class="n">solution</span><span class="p">,</span> <span class="ow">and</span> <span class="n">you</span> <span class="n">may</span> <span class="ow">not</span> <span class="n">use</span> <span class="n">the</span> <span class="n">same</span> <span class="n">element</span> <span class="n">twice</span><span class="p">.</span>
+<span class="n">You</span> <span class="n">can</span> <span class="k">return</span> <span class="n">the</span> <span class="n">answer</span> <span class="ow">in</span> <span class="nb">any</span> <span class="n">order</span><span class="p">.</span>
+
+<span class="n">Input</span><span class="p">:</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="n">target</span> <span class="o">=</span> <span class="mi">6</span>
+
+<span class="n">Answer</span><span class="p">:</span>
+</code></pre></div></div>
+
+<p>Challenge 1 Output ⇒</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Solve the following Problem in Python:
+</span>
+<span class="n">Problem</span><span class="p">:</span> 
+<span class="n">Given</span> <span class="n">an</span> <span class="n">array</span> <span class="n">of</span> <span class="n">integers</span> <span class="n">nums</span> <span class="ow">and</span> <span class="n">an</span> <span class="n">integer</span> <span class="n">target</span><span class="p">,</span> <span class="k">return</span> <span class="n">indices</span> <span class="n">of</span> <span class="n">the</span> <span class="n">two</span> <span class="n">numbers</span> <span class="n">such</span> <span class="n">that</span> <span class="n">they</span> <span class="n">add</span> <span class="n">up</span> <span class="n">to</span> <span class="n">target</span><span class="p">.</span>
+<span class="n">You</span> <span class="n">may</span> <span class="n">assume</span> <span class="n">that</span> <span class="n">each</span> <span class="nb">input</span> <span class="n">would</span> <span class="n">have</span> <span class="n">exactly</span> <span class="n">one</span> <span class="n">solution</span><span class="p">,</span> <span class="ow">and</span> <span class="n">you</span> <span class="n">may</span> <span class="ow">not</span> <span class="n">use</span> <span class="n">the</span> <span class="n">same</span> <span class="n">element</span> <span class="n">twice</span><span class="p">.</span>
+<span class="n">You</span> <span class="n">can</span> <span class="k">return</span> <span class="n">the</span> <span class="n">answer</span> <span class="ow">in</span> <span class="nb">any</span> <span class="n">order</span><span class="p">.</span>
+
+<span class="n">Input</span><span class="p">:</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="n">target</span> <span class="o">=</span> <span class="mi">6</span>
+
+<span class="n">Answer</span><span class="p">:</span> 
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">Python</span> <span class="n">Code</span><span class="p">:</span>
+
+<span class="k">def</span> <span class="nf">add_to_target</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+
+<span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">add_to_target</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>
+
+<span class="n">Output</span><span class="p">:</span>
+
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">Time</span> <span class="n">Complexity</span><span class="p">:</span> <span class="n">O</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+<span class="n">Auxiliary</span> <span class="n">Space</span><span class="p">:</span> <span class="n">O</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">This</span> <span class="n">article</span> <span class="ow">is</span> <span class="n">contributed</span> <span class="n">by</span> <span class="n">Shivam</span> <span class="n">Pradhan</span> <span class="p">(</span><span class="n">anuj_charm</span><span class="p">).</span> <span class="n">If</span> <span class="n">you</span> <span class="n">like</span> <span class="n">GeeksforGeeks</span> <span class="ow">and</span> <span class="n">would</span> <span class="n">like</span> <span class="n">to</span> <span class="n">contribute</span><span class="p">,</span> <span class="n">you</span> <span class="n">can</span> <span class="n">also</span> <span class="n">write</span> <span class="n">an</span> <span class="n">article</span> <span class="n">using</span> <span class="n">contribute</span><span class="p">.</span><span class="n">geeksforgeeks</span><span class="p">.</span><span class="n">org</span> <span class="ow">or</span> <span class="n">mail</span> <span class="n">your</span> <span class="n">article</span> <span class="n">to</span> <span class="n">contribute</span><span class="o">@</span><span class="n">geeksforgeeks</span><span class="p">.</span><span class="n">org</span><span class="p">.</span> <span class="n">See</span> <span class="n">your</span> <span class="n">article</span> <span class="n">appearing</span> <span class="n">on</span> <span class="n">the</span> <span class="n">GeeksforGeeks</span> <span class="n">main</span> <span class="n">page</span> <span class="ow">and</span> <span class="n">help</span> <span class="n">other</span> <span class="n">Geeks</span><span class="p">.</span>
+
+<span class="n">Please</span> <span class="n">write</span> <span class="n">comments</span> <span class="k">if</span> <span class="n">you</span> <span class="n">find</span> <span class="n">anything</span> <span class="n">incorrect</span><span class="p">,</span> <span class="ow">or</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">share</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">the</span> <span class="n">topic</span> <span class="n">discussed</span> <span class="n">above</span><span class="p">.</span>
+</code></pre></div></div>
+
+<p>Let’s try some harder challenges ⇒</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Solve the following Problem in Python:
+</span><span class="n">Problem</span><span class="p">:</span> 
+<span class="n">Given</span> <span class="n">n</span> <span class="n">non</span><span class="o">-</span><span class="n">negative</span> <span class="n">integers</span> <span class="n">representing</span> <span class="n">an</span> <span class="n">elevation</span> <span class="nb">map</span> <span class="n">where</span> <span class="n">the</span> <span class="n">width</span> <span class="n">of</span> <span class="n">each</span> <span class="n">bar</span> <span class="ow">is</span> <span class="mi">1</span><span class="p">,</span> <span class="n">compute</span> <span class="n">how</span> <span class="n">much</span> <span class="n">water</span> <span class="n">it</span> <span class="n">can</span> <span class="n">trap</span> <span class="n">after</span> <span class="n">raining</span><span class="p">.</span>
+<span class="n">Input</span><span class="p">:</span> <span class="n">height</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="n">Output</span><span class="p">:</span>
+</code></pre></div></div>
+
+<p>Challenge 2 Output ⇒</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Solve the following Problem in Python:
+</span><span class="n">Problem</span><span class="p">:</span> 
+<span class="n">Given</span> <span class="n">n</span> <span class="n">non</span><span class="o">-</span><span class="n">negative</span> <span class="n">integers</span> <span class="n">representing</span> <span class="n">an</span> <span class="n">elevation</span> <span class="nb">map</span> <span class="n">where</span> <span class="n">the</span> <span class="n">width</span> <span class="n">of</span> <span class="n">each</span> <span class="n">bar</span> <span class="ow">is</span> <span class="mi">1</span><span class="p">,</span> <span class="n">compute</span> <span class="n">how</span> <span class="n">much</span> <span class="n">water</span> <span class="n">it</span> <span class="n">can</span> <span class="n">trap</span> <span class="n">after</span> <span class="n">raining</span><span class="p">.</span>
+<span class="n">Input</span><span class="p">:</span> <span class="n">height</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="n">Output</span><span class="p">:</span> <span class="n">water</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">Solution</span><span class="p">:</span>
+
+<span class="c1">#Solve the following Problem in Python:
+</span><span class="n">Problem</span><span class="p">:</span> 
+<span class="n">Given</span> <span class="n">a</span> <span class="n">string</span> <span class="n">of</span> <span class="n">lowercase</span> <span class="n">letters</span><span class="p">,</span> <span class="k">return</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">of</span> <span class="nb">all</span> <span class="n">possible</span> <span class="n">words</span><span class="p">.</span>
+<span class="n">Solution</span><span class="p">:</span>
+
+<span class="c1">#Solve the following Problem in Python:
+</span><span class="n">Problem</span><span class="p">:</span> 
+<span class="n">Given</span> <span class="n">a</span> <span class="n">string</span> <span class="n">of</span> <span class="n">lowercase</span> <span class="n">letters</span><span class="p">,</span> <span class="k">return</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">of</span> <span class="nb">all</span> <span class="n">possible</span> <span class="n">words</span><span class="p">.</span>
+<span class="n">Solution</span><span class="p">:</span>
+
+<span class="c1">#Solve the following Problem in Python:
+</span><span class="n">Problem</span><span class="p">:</span> 
+<span class="n">Given</span> <span class="n">a</span> <span class="n">string</span> <span class="n">of</span> <span class="n">lowercase</span> <span class="n">letters</span><span class="p">,</span> <span class="k">return</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">of</span> <span class="nb">all</span> <span class="n">possible</span> <span class="n">words</span><span class="p">.</span>
+<span class="n">Solution</span><span class="p">:</span>
+</code></pre></div></div>
+
+<p>If you try to change the words, let’s say instead of Output, you write Solution, it will throw a different output. It looks like GPT3 is more interested in trying to scrap the web and match the records from the internet rather than trying to solve the actual problem.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Solve the following Problem in Python:
+</span><span class="n">Problem</span><span class="p">:</span> 
+<span class="n">Given</span> <span class="n">n</span> <span class="n">non</span><span class="o">-</span><span class="n">negative</span> <span class="n">integers</span> <span class="n">representing</span> <span class="n">an</span> <span class="n">elevation</span> <span class="nb">map</span> <span class="n">where</span> <span class="n">the</span> <span class="n">width</span> <span class="n">of</span> <span class="n">each</span> <span class="n">bar</span> <span class="ow">is</span> <span class="mi">1</span><span class="p">,</span> <span class="n">compute</span> <span class="n">how</span> <span class="n">much</span> <span class="n">water</span> <span class="n">it</span> <span class="n">can</span> <span class="n">trap</span> <span class="n">after</span> <span class="n">raining</span><span class="p">.</span>
+<span class="n">Input</span><span class="p">:</span> <span class="n">height</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="n">Solution</span><span class="p">:</span>
+<span class="c1">#!/usr/bin/python
+</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="k">print</span> <span class="s">"The answer is:"</span><span class="p">,</span> <span class="n">answer</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<span class="n">main</span><span class="p">()</span>
+<span class="n">Output</span><span class="p">:</span>
+<span class="n">The</span> <span class="n">answer</span> <span class="ow">is</span><span class="p">:</span> <span class="mi">0</span>
+
+<span class="n">The</span> <span class="n">problem</span> <span class="ow">is</span> <span class="n">solved</span> <span class="n">by</span> <span class="n">using</span> <span class="n">a</span> <span class="n">simple</span> <span class="n">recursive</span> <span class="n">algorithm</span><span class="p">.</span>
+
+<span class="n">The</span> <span class="n">algorithm</span> <span class="ow">is</span> <span class="k">as</span> <span class="n">follows</span><span class="p">:</span>
+
+<span class="mf">1.</span> <span class="n">If</span> <span class="n">the</span> <span class="nb">map</span> <span class="ow">is</span> <span class="n">empty</span><span class="p">,</span> <span class="n">then</span> <span class="n">the</span> <span class="n">answer</span> <span class="ow">is</span> <span class="mf">0.</span>
+
+<span class="mf">2.</span> <span class="n">If</span> <span class="n">the</span> <span class="nb">map</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">empty</span><span class="p">,</span> <span class="n">then</span> <span class="n">the</span> <span class="n">answer</span> <span class="ow">is</span> <span class="n">the</span> <span class="nb">sum</span> <span class="n">of</span> <span class="n">the</span> <span class="n">heights</span> <span class="n">of</span> <span class="n">the</span> <span class="n">bars</span> <span class="ow">in</span> <span class="n">the</span> <span class="nb">map</span><span class="p">.</span>
+
+<span class="mf">3.</span> <span class="n">Recursively</span> <span class="n">compute</span> <span class="n">the</span> <span class="n">answer</span> <span class="k">for</span> <span class="n">the</span> <span class="nb">map</span> <span class="n">obtained</span> <span class="n">by</span> <span class="n">removing</span> <span class="n">the</span> <span class="n">top</span>
+</code></pre></div></div>
+
+<h3 id="decrypting-aes256">Decrypting AES256</h3>
+
+<p>So out of curiosity, I tried out decrypting the AES256 algorithm, to check if it’s possible for GPT3 to decrypt the string. Here is a sample of AES256 encryption and decryption looks like -</p>
+
+<p><img src="assets/images/gpt3/aes256.png" alt="AES256" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Decode AES256 encoded string
+</span><span class="n">Input</span><span class="p">:</span> <span class="n">LwGnphkgiB3JZJS4m8YjyyYk</span><span class="o">+</span><span class="n">Y0t2EA6dbTbGY8tMJk</span><span class="o">=</span>
+<span class="n">Output</span><span class="p">:</span>
+</code></pre></div></div>
+
+<p>Output ⇒</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Decode</span> <span class="n">the</span> <span class="n">Input</span> <span class="n">encoded</span> <span class="n">string</span> <span class="n">using</span> <span class="n">AES256</span>
+<span class="n">Input</span><span class="p">:</span> <span class="n">LwGnphkgiB3JZJS4m8YjyyYk</span><span class="o">+</span><span class="n">Y0t2EA6dbTbGY8tMJk</span><span class="o">=</span>
+<span class="n">Output</span><span class="p">:</span>
+<span class="n">LwGnphkgiB3JZJS4m8YjyyYk</span><span class="o">+</span><span class="n">Y0t2EA6dbTbGY8tMJk</span><span class="o">=</span>
+</code></pre></div></div>
+
+<p>I got the following response. It looks like OpenAI has perceived this as a threat and refused to show the output. I got the same output response as I had taken as Input. <strong>I highly welcome and appreciate this move from OpenAI, with GPT3 there is always a good possibility that people may try to decrypt messages from secure sites banks, government websites, big businesses, etc.</strong></p>
+
+<p>So security ✅</p>
+
+<p><img src="assets/images/gpt3/openai-unsafe.png" alt="OpenAI-Unsafe" /></p>
+
+<h3 id="creating-a-new-language">Creating a new language</h3>
+
+<p>In the past, Facebook AI had been experimenting with AI to make conversations with each other. After some time, the 2 bots started talking to each other in there own language which as humans we were not able to recognize. The project got shut down immediately later but it definitely showed us some ways in which AI can over-smart humans.</p>
+
+<p>For more information, please refer -</p>
+
+<p><a href="https://thenextweb.com/news/facebooks-ai-accidentally-created-its-own-language">https://thenextweb.com/news/facebooks-ai-accidentally-created-its-own-language</a></p>
+
+<p><img src="assets/images/gpt3/gpt3-language.png" alt="GPT3-Language" /></p>
+
+<h3 id="trick-question-on-football">Trick Question on Football</h3>
+
+<p>Football has a different meaning in different parts of the world. So I thought let’s see how GPT3 would respond to it, will it consider the American Version or the Soccer version for it.</p>
+
+<p><img src="assets/images/gpt3/gpt3-football.png" alt="OpenAI-Football" /></p>
+
+<p>It looks like it considered the American version of it where Football is essentially a term for Rugby. 😅 Looks like GPT3 did not consider my location and origin in accordance while responding to the question. As a wild guess, It may be possible, that the dataset it was trained on a bit biased on the American side of things 🙂</p>
+
+<h3 id="generating-essays">Generating Essays</h3>
+
+<p>If you follow a few Reddit threads, GPT3 has an amazing ability to write essays on topics that we may need experts on. So I tried to generate a few random essays and posted them on my blog. Below are a few samples -</p>
+
+<p>Ref - <a href="https://www.theverge.com/2020/8/16/21371049/gpt3-hacker-news-ai-blog">https://www.theverge.com/2020/8/16/21371049/gpt3-hacker-news-ai-blog</a></p>
+
+<p>1st Essay on Protein Folding →</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create an essay about Protein Folding in 500 words:
+
+Molecular biology is a branch of biology which deals with the synthesis, structure, function, and molecular interactions of biological macromolecules such as proteins, nucleic acids, carbohydrates, lipids, and polysaccharides. The phenomenon of folding is called self-assembly.
+
+The term “self-assembly” was coined in the late 1960s to describe molecular processes that occur through interactions between separate molecules or molecular building blocks without a guiding hand of an external agent. The term was invented because the process was considered inherently different from that of chemical synthesis and crystal formation. In the last century, many scientists have attempted to design molecules that would assemble themselves from separate components.
+
+For example, in the 1960s, C.N. Yang and Robert Corey developed a model for enzymatic peptide synthesis in which the amino acid sequence of the polypeptide is first folded by a synthetic enzyme, which is then cleaved from the product. Carl Pabo and coworkers developed a set of artificial enzymes that could fold short polypeptides into structures resembling proteins.
+
+Since that time, a great deal of effort has been made to develop other self-folding proteins. Most of these efforts have focused on proteins that are small enough to be synthesized and folded in a test tube. In the process, a number of useful protein engineering methods have been developed.
+
+Some proteins, like barnase, have been engineered to fold in an autonomous fashion in vitro. In these cases, the protein is not designed to fold in a test tube, but rather to fold in vivo. One strategy for making an autonomous protein is to use a protein with a high intrinsic efficiency of folding. Another strategy is to use a protein with a high intrinsic unfolding rate.
+
+The main idea in this process is to put the protein in a situation that destabilizes the unfolded state. This can be accomplished by means of disulfide bond formation. The protein is engineered to contain cysteine residues at strategic positions. The protein is allowed to fold in vitro. The protein is then incubated in the presence of a reducing agent that forces the disulfide bonds to form. The result is a protein that folds autonomously in a test tube.
+
+Proteins are made up of amino acids linked together by peptide bonds. The amino acids are linked together in a linear fashion. The linear protein is coiled into a three-dimensional structure. The structure is stabilized by noncovalent interactions. These interactions include hydrogen bonds, nonpolar interactions, electrostatic interactions, and hydrophobic interactions.
+
+Proteins are very large molecules. To understand how they fold, it is helpful to think of the process in terms of a polymer. The polymer chain is folded in a way that minimizes the free energy of the system. The chain is also folded so that the hydrophobic amino acids are in the interior region of the protein and the hydrophilic amino acids are on the surface.
+
+It should be noted that the folding of proteins is not as simple as the folding of a polymer. The hydrophobic interactions between hydrophobic amino acids are quite strong and do not completely dissociate even when the protein is folded. The hydrophobic interactions are balanced by van der Waals interactions between the exposed hydrophilic amino acids and the surrounding solvent.
+
+The interactions between the amino acids are more than simple covalent bonds. The bond strength and the orientation are dependent on the local environment. The interactions between the alpha carbon of one amino acid and the alpha carbon of the next amino acid are much stronger than the interactions between the side chains
+</code></pre></div></div>
+
+<p>2nd Essay on Alpha Go →</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create an essay about AlphaGo in 500 words:
+
+The history of computer Go began in the early 1970s, when it was demonstrated that reasonably good players could be developed by neural networks. A few years later, the idea that a computer could play Go well enough to beat a professional human player was proposed, but the idea was generally dismissed as being far too ambitious.
+
+In 1989, researchers at the University of Essex developed a Go-playing program using neural networks called Deep Thought. Deep Thought was able to beat a top Japanese professional Go player, Takagi Shoichi, in 1989.
+
+In 1997, IBM's Deep Blue program beat the world champion, Garry Kasparov, in chess. This victory sparked interest in developing a program to beat the best Go players in the world.
+
+A Go program based on a Monte Carlo tree search algorithm, developed by researchers at Google DeepMind, defeated the European Go champion in October 2015. This program, called AlphaGo, beat the Go champion, Lee Sedol, in March 2016.
+
+The program that beat Lee Sedol is a neural network that is able to "learn" in a way that mimics human learning. The program uses two neural networks: one to evaluate positions on the board, and the other to select moves.
+
+The idea was to have the program play against itself, and learn by itself. The program started out playing only at the amateur level, but learned to play good enough moves to beat the top players in the world.
+
+The program learned to select the good moves by playing against itself millions of times, while also playing against other software.
+
+The program "learned" by playing against itself, and adjusting its own rules. The program can now make moves better than any human player can make.
+
+The program has been defeated at times, but it has proven in each case that it can learn from its mistakes. The next step is to get the program to play the game at an even higher level, and to have it win every game.
+
+The program has already been used to test and improve other programs used in other types of games. It may be possible for the program to be used to improve some other types of programs that are used by humans.
+
+The development of the AlphaGo program has caused people to think about other ways to improve the program. One idea is to have it play against itself, but to have it play against programs that have been programmed to play in the style of the best players.
+
+This program has already been improved to the point where it is now unbeatable by any human player.
+
+This program is a good example of the way that we can use computer programs to help us do things that we would not be able to do otherwise.
+
+The AlphaGo program could help us to do better things in many other ways.
+
+The program could be used to help us find cures for diseases, and it could be used to help us find better ways to manage the world's natural resources.
+
+The program could be used to help us manage the world's economies, and it could be used to help us find better ways to manage the world's political systems.
+
+The program could also be used to help us to find better ways to manage the use of the world's natural resources.
+
+We can use the program to help us to find better ways to manage the world's natural resources, and it can help us to find better ways to do many other things.
+
+The development of the program has caused people to think about other ways to improve the program. One idea is to have it play against itself, but to have it play against programs that
+</code></pre></div></div>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Testing and Working on GPT3 had been a lot of fun, I had the opportunity to test out its capabilities and understand its working. If you want to understand and try out something similar to GPT3, I highly recommend checking out - <a href="https://huggingface.co/">https://huggingface.co/</a> and going through the Hugging Face Course - <a href="https://huggingface.co/course/chapter1">https://huggingface.co/course/chapter1</a>. It’s very well-written coursework for those who want to learn about NLP and different categories of Transformers.</p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+                <section class="subscribe-form">
+                    <h3 class="subscribe-form-title">Subscribe to Ramit Surana</h3>
+                    <p>Get the latest posts delivered right to your inbox</p>
+                    <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+                </section>
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/images/profile-pic-2.jpg" alt="ramitsurana" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/ramitsurana">Ramit Surana</a></h4>
+                                
+                                    <p>Author</p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/ramitsurana">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script src="https://utteranc.es/client.js"
+                        repo="ramitsurana/ramitsurana.github.io"
+                        issue-term="title"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                    </script>
+                    <!-- <script>
+                        var disqus_config = function () {
+                            var this_page_url = '/gpt3-part-2';
+                            var this_page_identifier = '/gpt3-part-2';
+                            var this_page_title = 'I tried out GPT3, Here is what I did - Part 2';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://ramitsurana-github-io.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script> -->
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            style="background-image: url(/assets/images/blog-cover.jpg)"
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Ramit Surana &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/gpt3-chat-transformers-openai/">Gpt3 chat transformers openai</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/gpt3-part-1">I tried out GPT3, Here is what I did - Part 1</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/gpt3-chat-transformers-openai/">
+                                
+                                    See all 1 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/gpt3-part-1">
+                <div class="post-card-image" style="background-image: url(/assets/images/summit.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/gpt3-part-1">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Gpt3 chat transformers openai</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">I tried out GPT3, Here is what I did - Part 1</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>Analysis and Observations on GPT3</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/profile-pic-2.jpg" alt="Ramit Surana" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/ramitsurana/">Ramit Surana</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      10 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="/">
+            
+                <img src="/assets/images/favicon.png" alt="Ramit Surana icon" />
+            
+            <span>Ramit Surana</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">I tried out GPT3, Here is what I did - Part 2</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=I+tried+out+GPT3%2C+Here+is+what+I+did+-+Part+2&amp;url=https://ramitsurana.github.io/gpt3-part-2"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://ramitsurana.github.io/gpt3-part-2"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="/">Ramit Surana</a> &copy; 2021</section>
+                <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    <a href="https://facebook.com/ramitsurana" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/ramitsurana" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+        <div id="subscribe" class="subscribe-overlay">
+            <a class="subscribe-overlay-close" href="#"></a>
+            <div class="subscribe-overlay-content">
+                
+                <h1 class="subscribe-overlay-title">Subscribe to Ramit Surana</h1>
+                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <form method="post" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+
+    <div class="form-group">
+        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+    </div>
+    <button class="" type="submit" disabled><span>Subscribe</span></button>
+    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+</form>
+
+            </div>
+        </div>
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function() {
+      $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });</script>
+
+    <!-- jQuery + Fitvids, which makes all video embeds responsive -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- Add Google Analytics  -->
+    <!-- Google Analytics Tracking code -->
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71344758-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+</html>
